@@ -1,0 +1,14 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "next build",
+    "dev": "next dev"
+  },
+  "dependencies": {
+    "ui": "*",
+    "next": "14.x",
+    "react": "^18",
+    "react-dom": "^18"
+  }
+}

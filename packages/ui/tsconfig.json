@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "jsx": "react-jsx", // ← ВАЖНО: преобразует JSX
+    "module": "ESNext", // ← ВАЖНО: будет ES модули, а не CommonJS
+    "target": "ESNext",
+    "outDir": "./dist",
+    "moduleResolution": "node",
+    "declaration": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".",
+    "paths": {
+      "@mui/material/*": ["./node_modules/@mui/material/*"]
+    }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist", "**/*.test.ts", "**/*.test.tsx"]
+}
