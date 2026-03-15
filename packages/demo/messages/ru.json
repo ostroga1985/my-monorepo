@@ -1,0 +1,40 @@
+{
+  "Home": {
+    "title": "Демо стека технологий",
+    "subtitle": "Next.js + i18n + Zod + MUI",
+    "registration": "Регистрация"
+  },
+  "Form": {
+    "email": "Email",
+    "emailPlaceholder": "user@example.com",
+    "password": "Пароль",
+    "passwordPlaceholder": "Минимум 8 символов, цифра и заглавная буква",
+    "confirmPassword": "Подтверждение пароля",
+    "age": "Возраст",
+    "submit": "Зарегистрироваться",
+    "submitting": "Отправка...",
+    "errors": {
+      "fixErrors": "Исправьте ошибки в форме",
+      "emailRequired": "Email обязателен",
+      "emailInvalid": "Некорректный email",
+      "passwordMin": "Минимум 8 символов",
+      "passwordUppercase": "Должна быть заглавная буква",
+      "passwordNumber": "Должна быть цифра",
+      "passwordMatch": "Пароли не совпадают",
+      "ageMin": "Минимум 18 лет",
+      "ageMax": "Максимум 100 лет"
+    },
+    "validationInfo": {
+      "title": "Проверьте:",
+      "email": "Некорректный email",
+      "password": "Пароль без цифры/заглавной буквы",
+      "match": "Разные пароли",
+      "age": "Возраст меньше 18"
+    }
+  },
+  "Language": {
+    "ru": "Русский",
+    "en": "English",
+    "switch": "Сменить язык"
+  }
+}

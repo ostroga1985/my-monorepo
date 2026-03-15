@@ -1,0 +1,40 @@
+{
+  "Home": {
+    "title": "Tech Stack Demo",
+    "subtitle": "Next.js + i18n + Zod + MUI",
+    "registration": "Registration"
+  },
+  "Form": {
+    "email": "Email",
+    "emailPlaceholder": "user@example.com",
+    "password": "Password",
+    "passwordPlaceholder": "Min 8 chars, uppercase and number",
+    "confirmPassword": "Confirm Password",
+    "age": "Age",
+    "submit": "Register",
+    "submitting": "Submitting...",
+    "errors": {
+      "fixErrors": "Fix form errors",
+      "emailRequired": "Email is required",
+      "emailInvalid": "Invalid email",
+      "passwordMin": "Minimum 8 characters",
+      "passwordUppercase": "Must contain uppercase letter",
+      "passwordNumber": "Must contain number",
+      "passwordMatch": "Passwords do not match",
+      "ageMin": "Minimum 18 years",
+      "ageMax": "Maximum 100 years"
+    },
+    "validationInfo": {
+      "title": "Check:",
+      "email": "Invalid email",
+      "password": "Password without uppercase/number",
+      "match": "Different passwords",
+      "age": "Age less than 18"
+    }
+  },
+  "Language": {
+    "ru": "Russian",
+    "en": "English",
+    "switch": "Switch language"
+  }
+}
