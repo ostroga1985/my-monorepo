@@ -14,7 +14,11 @@
     "baseUrl": ".",
     "paths": {
       "@mui/material/*": ["./node_modules/@mui/material/*"]
-    }
+    },
+    "types": [
+      "vitest/globals",
+      "@testing-library/jest-dom" // 👈 ДОБАВЬТЕ ЭТУ СТРОКУ
+    ]
   },
   "include": ["src/**/*"],
   "exclude": [

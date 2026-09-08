@@ -8,7 +8,6 @@ export default function HomePage() {
     <main>
       <LanguageSwitcher />
       <h1>{t('title')}</h1>
-      {/* <RegistrationForm /> */}
     </main>
   );
 }

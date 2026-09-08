@@ -4,6 +4,10 @@ import { i18n } from './config';
 export default getRequestConfig(async ({ requestLocale }) => {
   // Проверяем, что locale есть
   let locale = await requestLocale;
+  console.log(
+    'requestLocalerequestLocalerequestLocalerequestLocalerequestLocalerequestLocale',
+    requestLocale,
+  );
 
   if (!locale) {
     console.error('Locale is undefined!');

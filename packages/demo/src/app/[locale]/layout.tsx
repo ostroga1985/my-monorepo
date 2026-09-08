@@ -4,18 +4,18 @@ import { notFound } from 'next/navigation';
 import { i18n } from '../../i18n/config';
 import ApolloProvider from '../providers/ApolloProvider';
 
-export function generateStaticParams() {
-  return i18n.locales.map((locale) => ({ locale }));
-}
-
-export default async function LocaleLayout({
-  children,
-  params: { locale },
-}: {
+// Правильный тип для Next.js 16 в продакшене
+type Props = {
   children: React.ReactNode;
-  params: { locale: string };
-}) {
-  console.log('LocaleLayout');
+  params: Promise<{ locale: string }>; // ВАЖНО: именно Promise!
+};
+
+export default async function LocaleLayout({ children, params }: Props) {
+  // Ждём locale
+  const { locale } = await params;
+
+  console.log('LocaleLayout with locale:', locale);
+
   if (!i18n.locales.includes(locale as any)) {
     notFound();
   }
@@ -23,12 +23,8 @@ export default async function LocaleLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale}>
-      <body>
-        <NextIntlClientProvider messages={messages}>
-          <ApolloProvider>{children}</ApolloProvider>
-        </NextIntlClientProvider>
-      </body>
-    </html>
+    <NextIntlClientProvider messages={messages}>
+      <ApolloProvider>{children}</ApolloProvider>
+    </NextIntlClientProvider>
   );
 }

@@ -6,7 +6,7 @@ import { ApolloProvider as Provider } from '@apollo/client/react';
 // Создаем клиент Apollo
 const client = new ApolloClient({
   cache: new InMemoryCache(),
-  link: new HttpLink({ uri: 'https://spacex-production.up.railway.app/' }),
+  link: new HttpLink({ uri: 'https://countries.trevorblades.com/' }),
 });
 
 export function ApolloProvider({ children }: { children: React.ReactNode }) {

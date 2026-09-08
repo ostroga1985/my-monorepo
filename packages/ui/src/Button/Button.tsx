@@ -1,4 +1,4 @@
 // import Button from '@mui/material/Button';
 
-const Button = () => <div>stвфывas4уйц123</div>;
+const Button = () => <div>Button</div>;
 export { Button };
